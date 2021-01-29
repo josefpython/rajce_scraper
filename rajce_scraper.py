@@ -4,10 +4,14 @@ import responsivepathing as rp
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-PATH = "C:\Program Files (x86)\chromedriver.exe" #THIS IS WHERE YOU SPECIFY THE ALBUM FROM WHICH YOU WANT TO DOWNLOAD
-todownload = open(rp.here("m.in"),"r").read().split("\n")
+#TO BE CHANGED BY USER#
 
-rajce_url = "https://litacijelen.rajce.idnes.cz/Suche_Poland_24.01._2021/"
+PATH = "C:\Program Files (x86)\chromedriver.exe" #YOU CAN ALSO CHANGE THE BROWSER ON LINE 32
+rajce_url = "https://litacijelen.rajce.idnes.cz/Suche_Poland_24.01._2021/" #THIS IS WHERE YOU SPECIFY THE ALBUM FROM WHICH YOU WISH TO DOWNLOAD
+
+########################
+
+todownload = open(rp.here("m.in"),"r").read().split("\n")
 rajce_main = requests.get(rajce_url)
 soup = BeautifulSoup(rajce_main.content, "html.parser")
 x = soup.find("div", id="thumbs-container")
