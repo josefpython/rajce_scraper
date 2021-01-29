@@ -5,3 +5,4 @@ The entire thing was built in like 3 hours so it might break lol<br>
 m.in is the input file for the numbers of images you wish to download, <br>
 the paths to the album itself and the selenium driver must be changed directly in rajce_scraper.py <br>
 <img src="https://cdn.discordapp.com/attachments/316992388977393665/804836098080636958/mo.gif">
+also dont look at the code too much its kinda disgusting 🥰
