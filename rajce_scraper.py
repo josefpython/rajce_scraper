@@ -4,7 +4,7 @@ import responsivepathing as rp
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-PATH = "C:\Program Files (x86)\chromedriver.exe"
+PATH = "C:\Program Files (x86)\chromedriver.exe" #THIS IS WHERE YOU SPECIFY THE ALBUM FROM WHICH YOU WANT TO DOWNLOAD
 todownload = open(rp.here("m.in"),"r").read().split("\n")
 
 rajce_url = "https://litacijelen.rajce.idnes.cz/Suche_Poland_24.01._2021/"
