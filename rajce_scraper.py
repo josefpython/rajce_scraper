@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
-todownload = open(rp.here("mn.in"),"r").read().split("\n")
+todownload = open(rp.here("m.in"),"r").read().split("\n")
 
 rajce_url = "https://litacijelen.rajce.idnes.cz/Suche_Poland_24.01._2021/"
 rajce_main = requests.get(rajce_url)
